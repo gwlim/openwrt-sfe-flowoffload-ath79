@@ -69,6 +69,8 @@ Nlbwmon - Network Bandwidth Monitoring (Normal Builds Only)
 
 HTTPS-DNS-Proxy encrypted DNS to query upstream DNS Servers (Normal Builds Only)
 
+https://hacks.mozilla.org/2018/05/a-cartoon-intro-to-dns-over-https/
+
 OpenVPN encrypted tunneling (Normal Builds Only)
 
 Wireguard encrypted stateless tunneling (Normal Builds Only)
