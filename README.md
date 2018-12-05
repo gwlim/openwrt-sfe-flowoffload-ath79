@@ -80,6 +80,10 @@ ShadowSocks encrypted proxy tunneling (Normal Builds Only)
 Use
 ---
 
+Default Network Address after login: 192.168.1.1
+
+Subnet Mask: 255.255.255.0
+
 Login: root
 
 After flashing only basic services are enabled, to use additional features you have to go to SYSTEM -> STARTUP to enable them
