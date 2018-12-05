@@ -107,6 +107,8 @@ To benchmark network performance
 
 https://openwrt.org/docs/guide-user/perf_and_log/benchmark.nat
 
+The benchmark below is for WR1043NDv1 AR9132 SoC@400MHZ, anything better should easily hit wired speeds
+
 ![alt text](https://raw.githubusercontent.com/gwlim/openwrt-sfe-flowoffload/master/bench.PNG)
 
 To benchmark crypto
