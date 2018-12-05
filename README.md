@@ -1,6 +1,6 @@
 # Fast Path Builds for LEDE/OpenWRT
 
-After flashing only basic services are enabled, to use additional features (including Flow Offload & SFE you have to enable them 
+After flashing only basic services are enabled, to use additional features (including Flow Offload & SFE) you have to enable them 
 --------------------------------------------------------------------------------------------------------------------------------
 
 Summary
