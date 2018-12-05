@@ -22,7 +22,7 @@ Which to use ?
 
 The images are subdivided into their respective SOC architectures.
 
-There are differences between mips24k, mips74k, powerpc(mpc85xx) and different optimizations are required to maximism the performance respectively.
+There are differences between mips24k, mips74k, powerpc(mpc85xx) and different optimizations are required to maximise the performance respectively.
 
 Linux Kernel size increase, as well as larger rootfs/security changes in Openwrt, 4MB Router devices are increasingly hard to support.
 
@@ -111,3 +111,15 @@ Compared on the same hardware, this firmware should achieve faster crypto perfor
 
 If you need VPN performance, wireguard should perform significantly better than OpenSSL
 
+Recovery in case of bad flash
+-----------------------------
+
+Most Routers have a tftp recovery mode to recover from bad flash.
+
+The generic steps are highlighted below
+
+https://openwrt.org/docs/guide-user/troubleshooting/tftpserver
+
+However you will need to find the specific steps for your router model.
+
+When running tftp server remember to set static ip on your computer and turn off your computer firewall temporarily.
