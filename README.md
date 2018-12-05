@@ -86,6 +86,8 @@ To enable FlowOffload go to NETWORK -> FIREWALL
 
 To enable SFE go to NETWORK -> FIREWALL
 
+![alt text](https://raw.githubusercontent.com/gwlim/openwrt-sfe-flowoffload/master/sfe-offload.PNG)
+
 It is recommended to reboot after enabling it.
 
 Running Benchmark
@@ -95,6 +97,7 @@ To benchmark network performance
 
 https://openwrt.org/docs/guide-user/perf_and_log/benchmark.nat
 
+![alt text](https://raw.githubusercontent.com/gwlim/openwrt-sfe-flowoffload/master/bench.PNG)
 
 To benchmark crypto
 
