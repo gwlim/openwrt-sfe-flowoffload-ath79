@@ -80,6 +80,8 @@ ShadowSocks encrypted proxy tunneling (Normal Builds Only)
 Use
 ---
 
+Login: root
+
 After flashing only basic services are enabled, to use additional features you have to go to SYSTEM -> STARTUP to enable them
 
 DYNACK is enabled on hostapd so for NETWORK -> WIRELESS -> ADVANCE SETTINGS -> DISTANCE OPTIMIZATION -> ENTER "auto" for best performance.
