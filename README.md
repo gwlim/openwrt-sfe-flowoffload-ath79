@@ -1,5 +1,8 @@
 # Fast Path Builds for LEDE/OpenWRT
 
+After flashing only basic services are enabled, to use additional features you have to go to SYSTEM -> STARTUP to enable them
+-----------------------------------------------------------------------------------------------------------------------------
+
 Summary
 -------
 
@@ -85,8 +88,6 @@ Default Network Address after login: 192.168.1.1
 Subnet Mask: 255.255.255.0
 
 Login: root
-
-After flashing only basic services are enabled, to use additional features you have to go to SYSTEM -> STARTUP to enable them
 
 DYNACK is enabled on hostapd so for NETWORK -> WIRELESS -> ADVANCE SETTINGS -> DISTANCE OPTIMIZATION -> ENTER "auto" for best performance.
 
