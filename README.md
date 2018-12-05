@@ -3,6 +3,9 @@
 After flashing only basic services are enabled, to use additional features (including Flow Offload & SFE) you have to START them 
 --------------------------------------------------------------------------------------------------------------------------------
 
+Reboot recommended to ensure all routing passes through fast path
+-----------------------------------------------------------------
+
 Summary
 -------
 
