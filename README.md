@@ -82,6 +82,8 @@ After flashing only basic services are enabled, to use additional features you h
 
 DYNACK is enabled on hostapd so for NETWORK -> WIRELESS -> ADVANCE SETTINGS -> DISTANCE OPTIMIZATION -> ENTER "auto" for best performance.
 
+![alt text](https://raw.githubusercontent.com/gwlim/openwrt-sfe-flowoffload/master/dynack.PNG)
+
 To enable FlowOffload go to NETWORK -> FIREWALL
 
 To enable SFE go to NETWORK -> FIREWALL
