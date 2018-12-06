@@ -48,8 +48,6 @@ Base on Linux Kernel 4.14 using GCC 7.3 toolchain (Both Builds)
 
 Full IPv6 support (Both Builds)
 
-SQM QoS (Both Builds)
-
 Memory Operations optimization for mips24k,mips74k and mpc85xx Architectures (Both Builds)
 
 Shortcut-fe Fast Path Module for accelerated NAT/Routing performance (Both Builds)
@@ -64,6 +62,8 @@ bbr
 ```
 
 Stack-Smashing Protection (Normal Builds STRONG, Mini builds REGULAR)
+
+SQM QoS (Normal Builds included, Mini Builds install from opkg)
 
 Compiled with -O2 Compiler optimization (Normal Builds Only)
 
