@@ -48,6 +48,8 @@ Base on Linux Kernel 4.14 using GCC 7.3 toolchain (Both Builds)
 
 Full IPv6 support (Both Builds)
 
+PPPoE and L2TP Kmods included, xl2tpd can be installed from opkg (Both Builds)
+
 Memory Operations optimization for mips24k,mips74k and mpc85xx Architectures (Both Builds)
 
 Shortcut-fe Fast Path Module for accelerated NAT/Routing performance (Both Builds)
