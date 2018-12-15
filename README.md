@@ -85,10 +85,21 @@ Wireguard encrypted stateless tunneling (Normal Builds Only)
 
 ShadowSocks encrypted proxy tunneling (Normal Builds Only)
 
+How to install from OEM firmware
+--------------------------------
+
+1. Download the **"factory"** firmware and upload it via the firmware upgrade page (Done for the first time only)
+
+2. For Subsequent upgrades to newer Openwrt firmware, download the **"sysupgrade"** and upload it via the openwrt firmware upgrade page
+
+3. [Use http://192.168.1.1 to access the OpenWrt Router Configuration Page](http://192.168.1.1)
+
+4. Configure your Router settings and enable the features required
+
 Use
 ---
 
-Default Network Address after login: 192.168.1.1
+Default Network Address after login: [http://192.168.1.1](http://192.168.1.1)
 
 Subnet Mask: 255.255.255.0
 
@@ -123,7 +134,7 @@ https://oldwiki.archive.openwrt.org/doc/howto/benchmark.openssl
 
 Compared on the same hardware, this firmware should achieve faster crypto performance
 
-If you need VPN performance, wireguard should perform significantly better than OpenSSL
+If you need VPN performance, wireguard should perform significantly better than OpenVPN
 
 Recovery in case of bad flash
 -----------------------------
