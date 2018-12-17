@@ -130,7 +130,7 @@ The benchmark below is for WR1043NDv1 AR9132 SoC@400MHZ, anything better should 
 
 To benchmark crypto
 
-https://oldwiki.archive.openwrt.org/doc/howto/benchmark.openssl
+https://openwrt.org/docs/guide-user/perf_and_log/benchmark.openssl
 
 Compared on the same hardware, this firmware should achieve faster crypto performance
 
