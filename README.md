@@ -44,7 +44,7 @@ Therefore if your router has 32MB RAM OR 4MB Flash please go for the mini builds
 Features
 --------
 
-Base on Linux Kernel 4.14 using GCC 7.3 toolchain (Both Builds)
+Base on Linux Kernel 4.14 using GCC 7.4 toolchain (Both Builds)
 
 Full IPv6 support (Both Builds)
 
@@ -113,7 +113,11 @@ To enable FlowOffload go to NETWORK -> FIREWALL
 
 To enable SFE go to NETWORK -> FIREWALL
 
-![alt text](https://raw.githubusercontent.com/gwlim/openwrt-sfe-flowoffload/master/sfe-offload.PNG)
+![alt text](https://raw.githubusercontent.com/gwlim/openwrt-sfe-flowoffload/master/sfe-offload-1.PNG)
+
+![alt text](https://raw.githubusercontent.com/gwlim/openwrt-sfe-flowoffload/master/sfe-offload-2.PNG)
+
+![alt text](https://raw.githubusercontent.com/gwlim/openwrt-sfe-flowoffload/master/sfe-offload-3.PNG)
 
 It is recommended to reboot after enabling it.
 
