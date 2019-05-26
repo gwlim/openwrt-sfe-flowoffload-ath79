@@ -82,6 +82,8 @@ Therefore if your router has 32MB RAM OR 4MB Flash please go for the mini builds
 Features
 --------
 
+Overclock firmwares for Atheros AR7161 is now available for Netgear WNDR3700v1-mips24k, Netgear WNDR3800CH-mips24k, Mikrotik RB450G-mips24k, look for the letters "oc" in the firmware filename. Overclocked settings CPU:800MHZ,RAM:400MHZ,AHB:200MHZ
+
 Base on Linux Kernel 4.14 using GCC 7.4 toolchain (Both Builds)
 
 Full IPv6 support (Both Builds)
