@@ -13,7 +13,7 @@ List of Routers (Supported added base on suitability & request)
 ---------------------------------------------------------------
 
 | Model | Actual Processor Architecture | Variant |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | Mercury MW4530Rv1 | mips74k | Normal |
 | Mikrotik RB450G | mips24k | Normal |
 | Netgear WNDR3700v1 | mips24k | Normal |
