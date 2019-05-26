@@ -1,10 +1,48 @@
-# Fast Path Builds for LEDE/OpenWRT
+# Fast Path Builds for OpenWRT
 
 After flashing only basic services are enabled, to use additional features (including Flow Offload & SFE) you have to START them 
 --------------------------------------------------------------------------------------------------------------------------------
 
+Non-essential Kernel Modules have been moved to a tarball. Download and install them separately.
+------------------------------------------------------------------------------------------------
+
 Reboot recommended to ensure all routing passes through fast path
 -----------------------------------------------------------------
+
+List of Routers (Supported added base on suitability & request)
+---------------------------------------------------------------
+
+| Model | Actual Processor Architecture | Variant |
+| --- | --- | --- | --- |
+| Mercury MW4530Rv1 | mips74k | Normal |
+| Mikrotik RB450G | mips24k | Normal |
+| Netgear WNDR3700v1 | mips24k | Normal |
+| Netgear WNDR3700v4 | mips74k | Normal |
+| Netgear WNDR3800CH | mips24k | Normal |
+| Netgear WNDR4300v1 | mips74k | Normal |
+| Phicomm K2T | mips74k | Normal |
+| TP-Link Archer C5v1 | mips74k | Normal |
+| TP-Link Archer C7v2-IL | mips74k | Normal |
+| TP-Link Archer C7v2 | mips74k | Normal |
+| TP-Link Archer C7v4 | mips74k | Normal |
+| TP-Link Archer C7v5 | mips74k | Normal |
+| TP-Link MR3420v1 | mips24k | Modded 64MB RAM |
+| TP-Link MR3420v2 | mips74k | Modded 64MB RAM |
+| TP-Link WDR3500v1 | mips74k | Normal |
+| TP-Link WDR3600v1 | mips74k | Normal |
+| TP-Link WDR4300v1 | mips74k | Normal |
+| TP-Link WDR4310v1 | mips74k | Normal |
+| TP-Link WDR4900v1 | mpc8548  | Normal |
+| TP-Link WDR7500v3 | mips74k | Normal |
+| TP-Link WR1043NDv1 | mips24k | Both |
+| TP-Link WR1043NDv2 | mips74k | Normal |
+| TP-Link WR1043NDv3 | mips74k | Normal |
+| TP-Link WR1043NDv4 | mips74k | Normal |
+| TP-Link WR1043Nv5 | mips74k | Normal |
+| TP-Link WR2543ND | mips24k | Normal |
+| Ubiquiti UniFi AC Lite| mips74k | Normal |
+| Western Digital My Net N750| mips74k | Normal |
+
 
 Summary
 -------
@@ -15,7 +53,7 @@ The firmware images are based on the Trunk Branch of Openwrt.
 
 During to kernel configuration modifications, upstream kmods cannot be used but upstream packages can be installed
 
-If you need any kmods can you open an issue.
+All the kmods are available in the tarball
 
 If your router is among the supported (must be ar71xx, ath79 or mpc85xx based) and you want to use this firmware open an issue.
 
@@ -54,7 +92,7 @@ Memory Operations optimization for mips24k,mips74k and mpc85xx Architectures (Bo
 
 Shortcut-fe Fast Path Module for accelerated NAT/Routing performance (Both Builds)
 
-FlowOffload Fast Path Module for accelerated NAT/Routing performance (Both Builds)
+FlowOffload Fast Path Module for accelerated NAT/Routing performance (In Tarball Archives)
 
 Default to BBR Congestion Control Algorithm (Both Builds)
 
@@ -73,7 +111,7 @@ OpenSSL Crypto assembly optimizations for mips24k,mips74k and mpc85xx Architectu
 
 Nlbwmon - Network Bandwidth Monitoring (Normal Builds Only)
 
-4G LTE USB Support (Normal Builds Only)
+4G LTE USB Support (Normal Builds Only, Drivers in Tarball Archive)
 
 HTTPS-DNS-Proxy encrypted DNS to query upstream DNS Servers (Normal Builds Only)
 
@@ -82,8 +120,6 @@ https://hacks.mozilla.org/2018/05/a-cartoon-intro-to-dns-over-https/
 OpenVPN encrypted tunneling (Normal Builds Only)
 
 Wireguard encrypted stateless tunneling (Normal Builds Only)
-
-ShadowSocks encrypted proxy tunneling (Normal Builds Only)
 
 How to install from OEM firmware
 --------------------------------
