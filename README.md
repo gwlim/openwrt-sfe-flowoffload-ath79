@@ -3,8 +3,8 @@
 After flashing only basic services are enabled, to use additional features (including Flow Offload & SFE) you have to START them 
 --------------------------------------------------------------------------------------------------------------------------------
 
-I can only tested the builds on units I own, so for units I do not own please feedback if something works or not
-----------------------------------------------------------------------------------------------------------------
+I can only test the builds on units I own, so for units I do not own please feedback if something works or not
+--------------------------------------------------------------------------------------------------------------
 
 Non-essential Kernel Modules have been moved to a tarball. Download and install them separately.
 ------------------------------------------------------------------------------------------------
