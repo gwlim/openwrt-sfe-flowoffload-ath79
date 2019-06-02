@@ -3,6 +3,9 @@
 After flashing only basic services are enabled, to use additional features (including Flow Offload & SFE) you have to START them 
 --------------------------------------------------------------------------------------------------------------------------------
 
+I can only tested the builds on units I own, so for units I do not own please feedback if something works or not
+----------------------------------------------------------------------------------------------------------------
+
 Non-essential Kernel Modules have been moved to a tarball. Download and install them separately.
 ------------------------------------------------------------------------------------------------
 
@@ -24,17 +27,17 @@ List of Routers (Supported added base on suitability & request)
 | TP-Link Archer C5v1 | mips74k | Normal |
 | TP-Link Archer C7v2-IL | mips74k | Normal |
 | TP-Link Archer C7v2 | mips74k | Normal |
-| TP-Link Archer C7v4 | mips74k | Normal |
+| TP-Link Archer C7v4 (Have unit for testing) | mips74k | Normal |
 | TP-Link Archer C7v5 | mips74k | Normal |
-| TP-Link MR3420v1 | mips24k | Modded 64MB RAM |
-| TP-Link MR3420v2 | mips74k | Modded 64MB RAM |
+| TP-Link MR3420v1 (Have unit for testing) | mips24k | Modded 64MB RAM |
+| TP-Link MR3420v2 (Have unit for testing) | mips74k | Modded 64MB RAM |
 | TP-Link WDR3500v1 | mips74k | Normal |
 | TP-Link WDR3600v1 | mips74k | Normal |
-| TP-Link WDR4300v1 | mips74k | Normal |
+| TP-Link WDR4300v1 (Have unit for testing) | mips74k | Normal |
 | TP-Link WDR4310v1 | mips74k | Normal |
-| TP-Link WDR4900v1 | mpc8548  | Normal |
+| TP-Link WDR4900v1 (Have unit for testing) | mpc8548  | Normal |
 | TP-Link WDR7500v3 | mips74k | Normal |
-| TP-Link WR1043NDv1 | mips24k | Both |
+| TP-Link WR1043NDv1 (Have unit for testing) | mips24k | Both |
 | TP-Link WR1043NDv2 | mips74k | Normal |
 | TP-Link WR1043NDv3 | mips74k | Normal |
 | TP-Link WR1043NDv4 | mips74k | Normal |
@@ -42,6 +45,7 @@ List of Routers (Supported added base on suitability & request)
 | TP-Link WR2543ND | mips24k | Normal |
 | Ubiquiti UniFi AC Lite| mips74k | Normal |
 | Western Digital My Net N750| mips74k | Normal |
+| Meraki MR16| mips24k | Normal |
 
 
 Summary
