@@ -26,10 +26,10 @@ List of Routers (Supported added base on suitability & request)
 | TP-Link WDR4310v1 | mips74k | ar71xx | ath9k | Normal |
 | TP-Link Archer C7v2-IL | mips74k | ar71xx | ath9k,ath10k-qca988x | Normal |
 | TP-Link WDR3500v1 | mips74k | ar71xx | ath9k | Normal |
+| TP-Link TL-WR1041Nv2 | mips74k | ar71xx | ath9k | Upgraded RAM/Flash |
 | Netgear WNDR3700v1 | mips24k | ath79 | ath9k | Normal |
 | TP-Link WR1043NDv1 (Have unit for testing) | mips24k | ath79 | ath9k | Both |
 | TP-Link WR2543ND | mips24k | ath79 | ath9k | Normal |
-| TP-Link TL-WR1041Nv2 | mips74k | ar71xx | ath9k | Upgraded RAM/Flash |
 | TP-Link WDR3600v1 | mips74k | ath79 | ath9k | Normal |
 | TP-Link WDR4300v1 (Have unit for testing) | mips74k | ath79 | ath9k | Normal |
 | TP-Link WR1043NDv2 | mips74k | ath79 | ath9k | Normal |
