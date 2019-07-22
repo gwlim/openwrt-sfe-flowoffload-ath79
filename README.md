@@ -1,5 +1,18 @@
 # Fast Path Builds for OpenWRT
 
+Changelog
+---------
+
+```
+
+Switched to ath79, note ar71xx is being slowly deprecated, it will not receive updates so please port your devices to ath79 at openwrt.org
+Updated to kernel 4.19 for ath79
+Fix up all unaligned memory accesses on ath79
+Optimize SFE for IPv4 and IPv6
+Fix up LuCI code for SFE
+
+```
+
 After flashing only basic services are enabled, to use additional features (including Flow Offload & SFE) you have to START them 
 --------------------------------------------------------------------------------------------------------------------------------
 
@@ -27,6 +40,7 @@ List of Routers (Supported added base on suitability & request)
 | TP-Link WDR3500v1 | mips74k | ar71xx | ath9k | Normal |
 | TP-Link TL-WR1041Nv2 | mips74k | ar71xx | ath9k | Upgraded RAM/Flash |
 | TP-Link Archer C7v2-IL | mips74k | ar71xx | ath9k,ath10k-qca988x | Normal |
+| TP-Link WDR7500v3 | mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
 | Netgear WNDR3700v1 | mips24k | ath79 | ath9k | Normal |
 | TP-Link WR1043NDv1 (Have unit for testing) | mips24k | ath79 | ath9k | Both |
 | TP-Link WR2543ND | mips24k | ath79 | ath9k | Normal |
@@ -41,11 +55,10 @@ List of Routers (Supported added base on suitability & request)
 | TP-Link Archer C5v1 | mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
 | TP-Link Archer C7v2 | mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
 | TP-Link Archer C7v4 | mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
-| TP-Link WDR7500v3 | mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
 | TP-Link Archer C7v5 | mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
 | Ubiquiti UniFi AC Lite| mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
 | Phicomm K2T | mips74k | ath79 | ath9k,ath10k-qca9888 | Normal |
-| TP-Link WDR4900v1 (Have unit for testing) | mpc8548  | Normal |
+| TP-Link WDR4900v1 (Have unit for testing) | mpc8548  | mpc85xx | ath9k | Normal |
 
 Summary
 -------
