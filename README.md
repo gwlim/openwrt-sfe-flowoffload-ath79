@@ -4,12 +4,14 @@ Changelog
 ---------
 
 ```
-
-Switched to ath79, note ar71xx is being slowly deprecated, it will not receive updates so please port your devices to ath79 at openwrt.org
+**Switched to ath79, note ar71xx is being deprecated, it will not receive updates soon so please port your devices to ath79 at openwrt.org**
 Updated to kernel 4.19 for ath79
 Fix up all unaligned memory accesses on ath79
 Optimize SFE for IPv4 and IPv6
 Fix up LuCI code for SFE
+Fix up IPv6 SFE Offloading
+Fixed up forgotten size optimization for kernel 4.19
+Add support for modded flash expansion for ath79
 
 ```
 
@@ -30,17 +32,17 @@ List of Routers (Supported added base on suitability & request)
 
 | Model | Actual Processor Architecture | Code Branch | Wireless | Variant |
 | --- | --- | --- | --- | --- |
-| Meraki MR16| mips24k | ar71xx | ath9k | Normal |
-| Mikrotik RB450G | mips24k | ar71xx | ath9k | Normal |
-| Netgear WNDR3800CH | mips24k | ar71xx | ath9k | Normal |
-| Mercury MW4530Rv1 | mips74k | ar71xx | ath9k | Normal |
-| Netgear WNDR3700v4 | mips74k | ar71xx | ath9k | Normal |
-| Netgear WNDR4300v1 | mips74k | ar71xx | ath9k | Normal |
-| TP-Link WDR4310v1 | mips74k | ar71xx | ath9k | Normal |
-| TP-Link WDR3500v1 | mips74k | ar71xx | ath9k | Normal |
-| TP-Link TL-WR1041Nv2 | mips74k | ar71xx | ath9k | Upgraded RAM/Flash |
-| TP-Link Archer C7v2-IL | mips74k | ar71xx | ath9k,ath10k-qca988x | Normal |
-| TP-Link WDR7500v3 | mips74k | ar71xx | ath9k,ath10k-qca988x | Normal |
+| Meraki MR16| mips24k | **ar71xx** | ath9k | Normal |
+| Mikrotik RB450G | mips24k | **ar71xx** | ath9k | Normal |
+| Netgear WNDR3800CH | mips24k | **ar71xx** | ath9k | Normal |
+| Mercury MW4530Rv1 | mips74k | **ar71xx** | ath9k | Normal |
+| Netgear WNDR3700v4 | mips74k | **ar71xx** | ath9k | Normal |
+| Netgear WNDR4300v1 | mips74k | **ar71xx** | ath9k | Normal |
+| TP-Link WDR4310v1 | mips74k | **ar71xx** | ath9k | Normal |
+| TP-Link WDR3500v1 | mips74k | **ar71xx** | ath9k | Normal |
+| TP-Link TL-WR1041Nv2 | mips74k | **ar71xx** | ath9k | Upgraded RAM/Flash |
+| TP-Link Archer C7v2-IL | mips74k | **ar71xx** | ath9k,ath10k-qca988x | Normal |
+| TP-Link WDR7500v3 | mips74k | **ar71xx** | ath9k,ath10k-qca988x | Normal |
 | TP-Link WR1043NDv1 (Have unit for testing) | mips24k | ath79 | ath9k | Both |
 | TP-Link WR2543ND | mips24k | ath79 | ath9k | Normal |
 | Netgear WNDR3700v1 | mips24k | ath79 | ath9k | Normal |
