@@ -40,10 +40,10 @@ List of Routers (Supported added base on suitability & request)
 | TP-Link WDR3500v1 | mips74k | ar71xx | ath9k | Normal |
 | TP-Link TL-WR1041Nv2 | mips74k | ar71xx | ath9k | Upgraded RAM/Flash |
 | TP-Link Archer C7v2-IL | mips74k | ar71xx | ath9k,ath10k-qca988x | Normal |
-| TP-Link WDR7500v3 | mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
-| Netgear WNDR3700v1 | mips24k | ath79 | ath9k | Normal |
+| TP-Link WDR7500v3 | mips74k | ar71xx | ath9k,ath10k-qca988x | Normal |
 | TP-Link WR1043NDv1 (Have unit for testing) | mips24k | ath79 | ath9k | Both |
 | TP-Link WR2543ND | mips24k | ath79 | ath9k | Normal |
+| Netgear WNDR3700v1 | mips24k | ath79 | ath9k | Normal |
 | TP-Link WDR3600v1 | mips74k | ath79 | ath9k | Normal |
 | TP-Link WDR4300v1 (Have unit for testing) | mips74k | ath79 | ath9k | Normal |
 | TP-Link WR1043NDv2 | mips74k | ath79 | ath9k | Normal |
@@ -51,12 +51,13 @@ List of Routers (Supported added base on suitability & request)
 | TP-Link WR1043NDv4 | mips74k | ath79 | ath9k | Normal |
 | TP-Link WR1043Nv5 | mips74k | ath79 | ath9k | Normal |
 | Western Digital My Net N750| mips74k | ath79 | ath9k | Normal |
-| TP-Link RE450v1 | mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
+| TP-Link RE450v1 | mips74k | ath79 | ath9k,ath10k-qca988x | Small |
 | TP-Link Archer C5v1 | mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
 | TP-Link Archer C7v2 | mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
 | TP-Link Archer C7v4 | mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
 | TP-Link Archer C7v5 | mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
 | Ubiquiti UniFi AC Lite| mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
+| Ubiquiti UniFi AC Pro| mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
 | Phicomm K2T | mips74k | ath79 | ath9k,ath10k-qca9888 | Normal |
 | TP-Link WDR4900v1 (Have unit for testing) | mpc8548  | mpc85xx | ath9k | Normal |
 
