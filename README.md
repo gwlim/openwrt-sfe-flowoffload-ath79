@@ -1,10 +1,12 @@
 # Fast Path Builds for OpenWRT
 
+:exclamation:[PLEASE NOTE AR71XX DEVICES WILL BE DEPRECATED, PLEASE PORT THE DEVICES TO ATH79 BY MIGRATING THEM TO DTS CODE AT OPENWRT.ORG](https://forum.openwrt.org/t/porting-guide-ar71xx-to-ath79/13013)
+------------------------------------------------------------------------------------------------------------------------------
+
 Changelog
 ---------
 
 ```
-**Switched to ath79, note ar71xx is being deprecated, it will not receive updates soon so please port your devices to ath79 at openwrt.org**
 Updated to kernel 4.19 for ath79
 Fix up all unaligned memory accesses on ath79
 Optimize SFE for IPv4 and IPv6
@@ -12,11 +14,10 @@ Fix up LuCI code for SFE
 Fix up IPv6 SFE Offloading
 Fixed up forgotten size optimization for kernel 4.19
 Add support for modded flash expansion for ath79
-
 ```
 
-After flashing only basic services are enabled, to use additional features (including Flow Offload & SFE) you have to START them 
---------------------------------------------------------------------------------------------------------------------------------
+After flashing only basic services are enabled, to use additional features (SFE) you have to START them 
+-------------------------------------------------------------------------------------------------------
 
 I can only test the builds on units I own, so for units I do not own please feedback if something works or not
 --------------------------------------------------------------------------------------------------------------
