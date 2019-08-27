@@ -14,6 +14,8 @@ Fix up LuCI code for SFE
 Fix up IPv6 SFE Offloading
 Fixed up forgotten size optimization for kernel 4.19
 Add support for modded flash expansion for ath79
+Shrink size for small builds by removing USB due to not enough free memory
+Fix up port forwarding in SFE
 ```
 
 After flashing only basic services are enabled, to use additional features (SFE) you have to START them 
@@ -62,6 +64,7 @@ List of Routers (Supported added base on suitability & request)
 | Ubiquiti UniFi AC Lite| mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
 | Ubiquiti UniFi AC Pro| mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
 | Phicomm K2T | mips74k | ath79 | ath9k,ath10k-qca9888 | Normal |
+| TP-Link Archer C6v2 | mips74k | ath79 | ath9k,ath10k-qca9888 | Normal |
 | TP-Link WDR4900v1 (Have unit for testing) | mpc8548  | mpc85xx | ath9k | Normal |
 
 Summary
@@ -102,9 +105,7 @@ Therefore if your router has 32MB RAM OR 4MB Flash please go for the mini builds
 Features
 --------
 
-Overclock firmwares for Atheros AR7161 is now available for Netgear WNDR3700v1-mips24k, Netgear WNDR3800CH-mips24k, Mikrotik RB450G-mips24k, look for the letters "oc" in the firmware filename. Overclocked settings CPU:800MHZ,RAM:400MHZ,AHB:200MHZ
-
-Base on Linux Kernel 4.14 using GCC 7.4 toolchain (Both Builds)
+Base on Linux Kernel 4.19 using GCC 7.4 toolchain (Both Builds)
 
 Full IPv6 support (Both Builds)
 
@@ -114,7 +115,7 @@ Memory Operations optimization for mips24k,mips74k and mpc85xx Architectures (Bo
 
 Shortcut-fe Fast Path Module for accelerated NAT/Routing performance (Both Builds)
 
-FlowOffload Fast Path Module for accelerated NAT/Routing performance (In Tarball Archives)
+FlowOffload Fast Path Module for accelerated NAT/Routing performance (Install from Tarball Archives)
 
 Default to BBR Congestion Control Algorithm (Both Builds)
 
@@ -123,21 +124,17 @@ root@openwrt:~# cat /proc/sys/net/ipv4/tcp_congestion_control
 bbr
 ```
 
-Stack-Smashing Protection (Normal Builds STRONG, Mini builds REGULAR)
+Stack-Smashing Protection (REGULAR)
 
 SQM QoS (Normal Builds included, Mini Builds install from opkg)
 
-Compiled with -O2 Compiler optimization (Normal Builds Only)
+Kernel Compiled with -O2 Compiler optimization (Normal Builds Only)
 
 OpenSSL Crypto assembly optimizations for mips24k,mips74k and mpc85xx Architectures (Normal Builds Only)
 
 Nlbwmon - Network Bandwidth Monitoring (Normal Builds Only)
 
 4G LTE USB Support (Normal Builds Only, Drivers in Tarball Archive)
-
-HTTPS-DNS-Proxy encrypted DNS to query upstream DNS Servers (Normal Builds Only)
-
-https://hacks.mozilla.org/2018/05/a-cartoon-intro-to-dns-over-https/
 
 OpenVPN encrypted tunneling (Normal Builds Only)
 
