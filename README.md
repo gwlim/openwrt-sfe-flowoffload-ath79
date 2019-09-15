@@ -61,6 +61,7 @@ List of Routers (Supported added base on suitability & request)
 | TP-Link Archer C7v2 | mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
 | TP-Link Archer C7v4 | mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
 | TP-Link Archer C7v5 | mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
+| TP-Link Archer A7v5 | mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
 | Ubiquiti UniFi AC Lite| mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
 | Ubiquiti UniFi AC Pro| mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
 | Phicomm K2T | mips74k | ath79 | ath9k,ath10k-qca9888 | Normal |
