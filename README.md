@@ -1,6 +1,6 @@
 # Fast Path Builds for OpenWRT
 
-:exclamation:[PLEASE NOTE AR71XX DEVICES WILL BE DEPRECATED, PLEASE PORT THE DEVICES TO ATH79 BY MIGRATING THEM TO DTS CODE AT OPENWRT.ORG](https://forum.openwrt.org/t/porting-guide-ar71xx-to-ath79/13013)
+:exclamation:[PLEASE NOTE AR71XX DEVICES HAS BEEN DEPRECATED, PLEASE PORT THE DEVICES TO ATH79 BY MIGRATING THEM TO DTS CODE AT OPENWRT.ORG](https://forum.openwrt.org/t/porting-guide-ar71xx-to-ath79/13013)
 ------------------------------------------------------------------------------------------------------------------------------
 
 Changelog
@@ -35,20 +35,11 @@ List of Routers (Supported added base on suitability & request)
 
 | Model | Actual Processor Architecture | Code Branch | Wireless | Variant |
 | --- | --- | --- | --- | --- |
-| Meraki MR16| mips24k | **ar71xx** | ath9k | Normal |
-| Mikrotik RB450G | mips24k | **ar71xx** | ath9k | Normal |
-| Netgear WNDR3800CH | mips24k | **ar71xx** | ath9k | Normal |
-| Mercury MW4530Rv1 | mips74k | **ar71xx** | ath9k | Normal |
-| Netgear WNDR3700v4 | mips74k | **ar71xx** | ath9k | Normal |
-| Netgear WNDR4300v1 | mips74k | **ar71xx** | ath9k | Normal |
-| TP-Link WDR4310v1 | mips74k | **ar71xx** | ath9k | Normal |
-| TP-Link WDR3500v1 | mips74k | **ar71xx** | ath9k | Normal |
-| TP-Link TL-WR1041Nv2 | mips74k | **ar71xx** | ath9k | Upgraded RAM/Flash |
-| TP-Link Archer C7v2-IL | mips74k | **ar71xx** | ath9k,ath10k-qca988x | Normal |
-| TP-Link WDR7500v3 | mips74k | **ar71xx** | ath9k,ath10k-qca988x | Normal |
+| Netgear WNDR3800CH | mips24k | ath79 | ath9k | Normal |
 | TP-Link WR1043NDv1 (Have unit for testing) | mips24k | ath79 | ath9k | Both |
 | TP-Link WR2543ND | mips24k | ath79 | ath9k | Normal |
 | Netgear WNDR3700v1 | mips24k | ath79 | ath9k | Normal |
+| TP-Link WDR3500v1 | mips74k | ath79 | ath9k | Normal |
 | TP-Link WDR3600v1 | mips74k | ath79 | ath9k | Normal |
 | TP-Link WDR4300v1 (Have unit for testing) | mips74k | ath79 | ath9k | Normal |
 | TP-Link WR1043NDv2 | mips74k | ath79 | ath9k | Normal |
