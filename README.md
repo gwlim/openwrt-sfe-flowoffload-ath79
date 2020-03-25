@@ -35,6 +35,7 @@ List of Routers (Supported added base on suitability & request)
 
 | Model | Actual Processor Architecture | Code Branch | Wireless | Variant |
 | --- | --- | --- | --- | --- |
+| Netgear WNDR2200 | mips24k | ath79 | ath9k | Normal |
 | Netgear WNDR3800 | mips24k | ath79 | ath9k | Normal |
 | Netgear WNDR3800CH | mips24k | ath79 | ath9k | Normal |
 | TP-Link WR1043NDv1 (Have unit for testing) | mips24k | ath79 | ath9k | Both |
