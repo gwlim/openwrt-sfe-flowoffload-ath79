@@ -3,6 +3,10 @@
 :exclamation:[PLEASE NOTE AR71XX DEVICES HAS BEEN DEPRECATED, PLEASE PORT THE DEVICES TO ATH79 BY MIGRATING THEM TO DTS CODE AT OPENWRT.ORG](https://forum.openwrt.org/t/porting-guide-ar71xx-to-ath79/13013)
 ------------------------------------------------------------------------------------------------------------------------------
 
+[FAQ](https://github.com/gwlim/openwrt-sfe-flowoffload/wiki/FAQ)
+---------
+
+
 Changelog
 ---------
 
