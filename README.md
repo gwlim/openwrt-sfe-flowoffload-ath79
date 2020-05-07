@@ -44,6 +44,7 @@ List of Routers (Supported added base on suitability & request)
 | Netgear WNDR3700v2 | mips24k | ath79 | ath9k | Normal |
 | Netgear WNDR3700v4 | mips74k | ath79 | ath9k | Normal |
 | Netgear WNDR4300v1 | mips74k | ath79 | ath9k | Normal |
+| D-Link DIR-835A1 | mips74k | ath79 | ath9k | Normal |
 | TP-Link WDR3500v1 | mips74k | ath79 | ath9k | Normal |
 | TP-Link WDR3600v1 | mips74k | ath79 | ath9k | Normal |
 | TP-Link WDR4300v1 (Have unit for testing) | mips74k | ath79 | ath9k | Normal |
