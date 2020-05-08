@@ -6,17 +6,23 @@
 [FAQ](https://github.com/gwlim/openwrt-sfe-flowoffload/wiki/FAQ)
 ---------
 
+Known Issues
+------------
+
+```
+LuCI is broken for Multi-SSID setup, login using SSH and use the command 'wifi' to restart Wireless
+```
 
 Changelog
 ---------
 
 ```
-Updated to kernel 4.19 for ath79
+Updated to kernel 5.4 for ath79
 Fix up all unaligned memory accesses on ath79
 Optimize SFE for IPv4 and IPv6
 Fix up LuCI code for SFE
 Fix up IPv6 SFE Offloading
-Fixed up forgotten size optimization for kernel 4.19
+Fixed up forgotten size optimization for kernel 5.4
 Add support for modded flash expansion for ath79
 Shrink size for small builds by removing USB due to not enough free memory
 Fix up port forwarding in SFE
