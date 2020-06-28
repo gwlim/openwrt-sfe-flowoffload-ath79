@@ -91,7 +91,7 @@ During to kernel configuration modifications, upstream kmods cannot be used but 
 
 All the kmods are available in the tarball
 
-If your router is among the supported (must be ar71xx, ath79 or mpc85xx based) and you want to use this firmware open an issue.
+If your router is among the supported (must be ath79 or mpc85xx based) and you want to use this firmware open an issue.
 
 This firmware is optimize for networking performance aspect, I don't recommend running NAS on embedded devices.
 
@@ -118,7 +118,7 @@ Therefore if your router has 32MB RAM OR 4MB Flash please go for the mini builds
 Features
 --------
 
-Base on Linux Kernel 4.19 using GCC 7.4 toolchain (Both Builds)
+Base on Linux Kernel 5.4 using GCC 8.4 toolchain (Both Builds)
 
 Full IPv6 support (Both Builds)
 
@@ -128,7 +128,7 @@ Memory Operations optimization for mips24k,mips74k and mpc85xx Architectures (Bo
 
 Shortcut-fe Fast Path Module for accelerated NAT/Routing performance (Both Builds)
 
-FlowOffload Fast Path Module for accelerated NAT/Routing performance (Install from Tarball Archives)
+FlowOffload Fast Path Module for accelerated NAT/Routing performance (Normal Builds)
 
 Default to BBR Congestion Control Algorithm (Both Builds)
 
@@ -194,7 +194,8 @@ Running Benchmark
 
 To benchmark network performance
 
-https://openwrt.org/docs/guide-user/perf_and_log/benchmark.nat
+IPv4: https://openwrt.org/docs/guide-user/perf_and_log/benchmark.nat
+IPv6: https://openwrt.org/docs/guide-user/perf_and_log/benchmark.ipv6.routing
 
 The benchmark below is for WR1043NDv1 AR9132 SoC@400MHZ, anything better should easily hit wired speeds
 
