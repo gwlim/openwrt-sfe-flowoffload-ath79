@@ -9,14 +9,14 @@
 Known Issues
 ------------
 
-```
-LuCI is broken for Multi-SSID setup, login using SSH and use the command 'wifi' to restart Wireless
-```
+32MB/4MB devices are no longer supported as it is too tedious and too much features have to be stripped to make it viable
+Strongly recommend to upgrade to newer routers or buy Flash/DRAM chips to solder on and upgrade your units
 
 Changelog
 ---------
 
 ```
+Support ipq4019 and ramips-24kec, ramips-1004kc
 Updated to kernel 5.4 for ath79
 Fix up all unaligned memory accesses on ath79
 Optimize SFE for IPv4 and IPv6
@@ -24,7 +24,6 @@ Fix up LuCI code for SFE
 Fix up IPv6 SFE Offloading
 Fixed up forgotten size optimization for kernel 5.4
 Add support for modded flash expansion for ath79
-Shrink size for small builds by removing USB due to not enough free memory
 Fix up port forwarding in SFE
 ```
 
@@ -43,42 +42,9 @@ Reboot recommended to ensure all routing passes through fast path
 List of Routers (Supported added base on suitability & request)
 ---------------------------------------------------------------
 
-| Model | Actual Processor Architecture | Code Branch | Wireless | Variant |
-| --- | --- | --- | --- | --- |
-| Netgear WNDR2200 | mips24k | ath79 | ath9k | Normal |
-| Netgear WNDR3800 | mips24k | ath79 | ath9k | Normal |
-| Netgear WNDR3800CH | mips24k | ath79 | ath9k | Normal |
-| Netgear WNDRMACv2 | mips24k | ath79 | ath9k | Normal |
-| TP-Link WR1043NDv1 (Have unit for testing) | mips24k | ath79 | ath9k | Both |
-| TP-Link WR2543ND | mips24k | ath79 | ath9k | Normal |
-| Netgear WNDR3700v1 | mips24k | ath79 | ath9k | Normal |
-| Netgear WNDR3700v2 | mips24k | ath79 | ath9k | Normal |
-| TP-Link Archer D50v1 | mips24k | ath79 | ath9k,ath10k-qca988x | Normal-ath10k-Small-Buffer |
-| Netgear WNDR3700v4 | mips74k | ath79 | ath9k | Normal |
-| Netgear WNDR4300v1 | mips74k | ath79 | ath9k | Normal |
-| D-Link DIR-835A1 | mips74k | ath79 | ath9k | Normal |
-| TP-Link WDR3500v1 | mips74k | ath79 | ath9k | Normal |
-| TP-Link WDR3600v1 | mips74k | ath79 | ath9k | Normal |
-| TP-Link WDR4300v1 (Have unit for testing) | mips74k | ath79 | ath9k | Normal |
-| TP-Link WR1043NDv2 | mips74k | ath79 | ath9k | Normal |
-| TP-Link WR1043NDv3 | mips74k | ath79 | ath9k | Normal |
-| TP-Link WR1043NDv4 | mips74k | ath79 | ath9k | Normal |
-| TP-Link WR1043Nv5 | mips74k | ath79 | ath9k | Normal |
-| Western Digital My Net N750| mips74k | ath79 | ath9k | Normal |
-| TP-Link RE450v1 | mips74k | ath79 | ath9k,ath10k-qca988x | Small |
-| TP-Link Archer C60v2 | mips74k | ath79 | ath9k,ath10k-qca988x | Normal-ath10k-Small-Buffer |
-| TP-Link Archer C5v1 | mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
-| TP-Link Archer C7v2 | mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
-| TP-Link Archer C7v4 | mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
-| TP-Link Archer C7v5 | mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
-| TP-Link Archer A7v5 | mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
-| TP-Link Archer D7v1 | mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
-| Ubiquiti UniFi AC Lite| mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
-| Ubiquiti UniFi AC Pro| mips74k | ath79 | ath9k,ath10k-qca988x | Normal |
-| Phicomm K2T | mips74k | ath79 | ath9k,ath10k-qca9888 | Normal-ath10k-Small-Buffer |
-| TP-Link Archer C6v2 | mips74k | ath79 | ath9k,ath10k-qca9888 | Normal |
-| D-Link DIR-842 C3 | mips74k | ath79 | ath9k,ath10k-qca9888 | Normal |
-| TP-Link WDR4900v1 (Have unit for testing) | mpc8548  | mpc85xx | ath9k | Normal |
+Supported routers are listed in the directories.
+You can request for platforms already supported in openwrt
+The following platforms are supported qca-ipq4019, ath79-mips24k, ramips-mips24kec, ramips-mips1004k, ath79-mips74k, freescale-mpc85xx
 
 Summary
 -------
@@ -102,7 +68,7 @@ Which to use ?
 
 The images are subdivided into their respective SOC architectures.
 
-There are differences between mips24k, mips74k, powerpc(mpc85xx) and different optimizations are required to maximise the performance respectively.
+There are differences between mips24k, mips24kec, mips74k, mips1004k, ipq4019, mpc85xx and different optimizations are required to maximise the performance respectively.
 
 Linux Kernel size increase, as well as larger rootfs/security changes in Openwrt, 4MB Router devices are increasingly hard to support.
 
@@ -112,29 +78,28 @@ There are 2 factors affecting this:
 
 -if the RAM is too small, after loading there is insufficient memory to load the firmware in memory and operate properly
 
-Therefore if your router has 32MB RAM OR 4MB Flash please go for the mini builds, otherwise you can go for the normal builds.
-
-
 Features
 --------
 
-Base on Linux Kernel 5.4 using GCC 8.4 toolchain (Both Builds)
+Base on Linux Kernel 5.4 using GCC 8.4 toolchain
 
-Full IPv6 support (Both Builds)
+Full IPv6 support
 
-PPPoE and L2TP Kmods included, xl2tpd can be installed from opkg (Both Builds)
+PPPoE and L2TP Kmods included, xl2tpd can be installed from opkg
 
-Memory Operations optimization for mips24k,mips74k and mpc85xx Architectures (Both Builds)
+Memory Operations optimization for mips24k, mips24kec, mips1004kc, mips74k and mpc85xx Architectures (Both Builds)
 
-Shortcut-fe Fast Path Module for accelerated NAT/Routing performance (Both Builds)
+Armv7 optimization for ipq4019
 
-FlowOffload Fast Path Module for accelerated NAT/Routing performance (Normal Builds)
+Shortcut-fe Fast Path Module for accelerated NAT/Routing performance
 
-Default to BBR Congestion Control Algorithm (Both Builds)
+FlowOffload Fast Path Module for accelerated NAT/Routing performance
+
+Default to CUBIC Congestion Control Algorithm 
 
 ```
 root@openwrt:~# cat /proc/sys/net/ipv4/tcp_congestion_control
-bbr
+cubic
 ```
 
 Stack-Smashing Protection (REGULAR)
